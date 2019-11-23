@@ -1,0 +1,19 @@
+<!-- This page has a single div to hold the Google Map.
+The script tag calls the initMap function. The reason it is called 
+this way is because the map.html page is only called and parsed after
+the start button is pressed, so we want the initMap() function to be 
+called only once the map div element is ready.  -->
+
+<ons-page>
+    <ons-toolbar>
+            <div class="left">
+                <ons-back-button></ons-back-button>
+            </div>            
+    </ons-toolbar>
+
+    <div id="map"></div>    
+    
+    <script>
+        initMap();
+    </script>
+</ons-page>

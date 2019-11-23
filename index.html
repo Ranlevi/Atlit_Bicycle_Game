@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+
+        <!-- OnsenUI is a framework for creating an app-like user interface.  -->
+
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+        <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+        <link href="styles/style.css" rel="stylesheet">
+        <script src="js/js.js"></script>
+
+        <!-- Imports the Google Maps Javascript API with an API Key, 
+        specifing a map in hebrew with IL locality. 
+        Note the dir="rtl" in the html element above. -->
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAQ-KjSRihROUxbEPzXRbi8EggBrM5Q9g&language=iw&region=IL" async defer></script>
+    </head>
+    <body>
+
+        <!-- The ons-navigator elemet allows us to create several ons-page elements,
+        which are then loaded in the app in a stack (e.g. a new page on top
+        of an existing page). We start with an intro page. When the start
+        button is pressed, we load the map.html page on top of it.  -->
+
+        <ons-navigator id="navigator">
+            <ons-page>
+                <ons-toolbar>
+                    
+                </ons-toolbar>
+
+                <div id="intro-page">
+                    
+                    <p>הרפתקת אופניים בעתלית</p>
+                    
+                    <ons-button onclick="start()">התחל</ons-button>
+                </div>
+
+            </ons-page>
+        </ons-navigator>
+        
+    </body>
+
+    
+</html>
+
